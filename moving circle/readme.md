@@ -1,0 +1,1 @@
+css animation wherein the circle is rotating inside the window in a spiral path.

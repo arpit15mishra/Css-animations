@@ -1,0 +1,222 @@
+button{
+    width:150px;
+    height:80px;
+    color: blueviolet;
+    border: none;
+    background-color: transparent;
+    margin:20px;
+    cursor:pointer;
+    font-size: 1cm;
+}
+
+#one{
+    border:3px solid blueviolet;
+}
+
+#one:hover{
+    
+    transition-delay: 0.3s;
+    transition-duration:3s;
+    background-color: blueviolet;
+    color:#fff;
+}
+#two{
+    position: relative;;
+
+}
+#two::before{
+    position: absolute;
+    content:'';
+    top:0px;
+    left: 0px;
+    width:0%;
+    height:2px;
+    background-color: blueviolet;
+    transition-duration: 0.3s;
+
+}
+#two::after{
+    
+    position: absolute;
+    content:'';
+    bottom:0px;
+    right: 0px;
+    width:0%;
+    height:2px;
+    background-color: blueviolet;
+    transition-duration: 0.3s;
+
+}
+#two:hover::after,
+#two:hover::before{
+    width:100%
+}
+
+
+#three{
+    position: relative;
+
+
+}
+#three::after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:0%;
+    background-color: blueviolet;
+    bottom:0;
+    left:0;
+    z-index:-1;
+    transition: 0.5s ease-in-out;
+
+}
+#three:hover{
+    color:#fff;
+    transition: 0.5s ease-out;
+}
+#three:hover::after{
+    height:100%
+}
+
+#four{
+    position: relative;
+    transition: 0.4;
+}
+#four::after{
+    content:'';
+    top: 0;
+    right:0;
+    position: absolute;
+    width:0%;
+    height: 0%;
+    background-color: blueviolet;
+    transition: 0.4s;
+    z-index:-1;
+}
+
+#four::before{
+    content:'';
+    bottom: 0;
+    left:0;
+    position: absolute;
+    width:0%;
+    height: 0%;
+    background-color: blueviolet;
+    transition: 0.4s;
+    z-index:-1;
+}
+#four:hover{
+    color:#fff;
+}
+#four:hover::after,
+#four:hover::before{
+    width:100%;
+    height:100%;
+}
+
+#five{
+    position: relative;
+}
+#five::after{
+    content:'';
+    top: 0;
+    right:0;
+    position: absolute;
+    width:0%;
+    height: 2px;
+    background-color: blueviolet;
+    transition: 0.3s;
+}
+
+#five::before{
+    content:'';
+    bottom: 0;
+    left:0;
+    position: absolute;
+    width:0%;
+    height: 2px;
+    background-color: blueviolet;
+    transition: 0.3s;
+}
+#five:hover::after,
+#five:hover::before{
+    width:100%;
+}
+
+#five-span::after{
+    content:'';
+    top: 0;
+    right:0;
+    position: absolute;
+    width:2px;
+    height: 0%;
+    background-color: blueviolet;
+    transition: 0.3s;
+}
+
+#five-span::before{
+    content:'';
+    bottom: 0;
+    left:0;
+    position: absolute;
+    width:2px;
+    height: 0%;
+    background-color: blueviolet;
+    transition: 0.3s;
+}
+#five-span:hover::after,
+#five-span:hover::before{
+    height:100%;
+}
+
+#six{
+    position: relative;
+    border:2px solid blueviolet;
+}
+#six::after{
+    content:'';
+    top: 0;
+    right:0;
+    position: absolute;
+    width:0%;
+    height: 0;
+    border-color: transparent  blueviolet transparent blueviolet;
+    border-style: solid;
+    border-width: 0 0 0 0;
+    transition: 0.3s;
+}
+
+#six::before{
+    content:'';
+    bottom: 0;
+    right:0;
+    position: absolute;
+    width:0%;
+    height: 2px;
+    border-style: solid;
+    border-color:transparent blueviolet  transparent blueviolet;
+    border-width: 0 0 0 0;
+    transition: 0.3s;
+}
+
+#six:hover::before{
+    border-width: 40px 40px 0 0 ;
+}
+#six:hover::after{
+    border-width:0 40px 40px 0 ;
+}
+
+#text::after{
+    content:'';
+    top: 0;
+    right:0;
+    position: absolute;
+    width:2px;
+    height: 0%;
+    transition: 0.3s;
+}
+
+#six:hover > #text
+{
+    padding-right: 20px;
+}

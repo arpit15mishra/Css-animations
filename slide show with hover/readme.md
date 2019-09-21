@@ -1,0 +1,1 @@
+this is one of the variant of the slideshow i have presented on repository which responds to the hover of mouse. when the mouse is hovered the motion of photos is stopped.

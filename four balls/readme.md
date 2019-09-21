@@ -1,0 +1,1 @@
+this file has a css animation of four balls that moves like moving under the gravity. they can be used by designer to indicate loading process and wating process.

@@ -1,0 +1,1 @@
+this is a slide show using css animation in which photos rolls in a limited region.

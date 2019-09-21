@@ -1,0 +1,1 @@
+a css spinner in which a number of squares rotate in a organised fashion.

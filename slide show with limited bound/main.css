@@ -1,0 +1,192 @@
+
+body{
+    padding:0;
+    margin:0;
+    
+}
+
+.parent{
+    width:100%;
+    height: 450px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation:action 25s ease-in-out 0s infinite;
+    border: 2px solid #000;
+
+}
+@keyframes action{
+
+}
+.parent:hover{
+    animation-play-state: paused;
+}
+
+
+.pictures:nth-child(1){
+
+    position: absolute;
+    background-repeat: no-repeat; 
+    transform: translate(-50%,-50%);
+    background: url(images/cover1.jpg);
+    background-position: center;
+    animation: flow 25s ease-in-out 0s infinite ;
+    animation-play-state: inherit;
+
+
+}
+.pictures:nth-child(1):hover,
+.pictures:nth-child(2):hover,
+.pictures:nth-child(3):hover,
+.pictures:nth-child(4):hover,
+.pictures:nth-child(5):hover
+ {
+    animation-play-state: paused;
+}
+
+
+.pictures:nth-child(2){
+    position: absolute;
+
+    background-repeat: no-repeat;  
+    transform: translate(-50%,-50%);
+    background: url(images/cover2.png);
+    background-position: center;
+    animation: flow 25s ease-in-out 5s infinite ;
+    animation-play-state: inherit;
+
+
+}
+
+
+
+.pictures:nth-child(3){
+    position: absolute;
+    background-repeat: no-repeat; 
+    
+    transform: translate(-50%,-50%);
+    background: url(images/cover3.png);
+    background-position: center;
+    animation: flow 25s ease-in-out 10s infinite ;
+    animation-play-state: inherit;
+
+
+}
+.pictures:nth-child(4){
+    position: absolute;
+    background-repeat: no-repeat; 
+    
+    transform: translate(-50%,-50%);
+    background: url(images/cover4.png);
+    background-position: center;
+    animation: flow 25s ease-in-out 15s infinite;
+    animation-play-state: inherit;
+
+
+}
+
+
+
+.pictures:nth-child(5){
+    position: absolute;
+    background-repeat: no-repeat;
+    
+    transform: translate(-50%,-50%);
+    background: url(images/cover1.jpg);
+    background-position: center;
+    animation: flow 25s ease-in-out 20s infinite;
+    animation-play-state: inherit;
+
+}
+
+
+@keyframes flow{
+    0%{
+        width:400px;
+        height:300px;
+        z-index: 0;
+        opacity: 0;
+        box-shadow: 0px 20px 20px 20px;
+        top:50%;
+        left:0%;
+    }
+    25%{
+        width:500px;
+        height: 400px;
+        z-index: 12;
+        opacity: 1;
+        box-shadow: 0px 10px 10px 10px;
+        top:50%;
+        left:25%;
+    }
+    50%{
+        width:600px;
+        height:450px;
+        box-shadow: 0px 5px 5px 5px;
+        z-index: 20;
+        opacity: 1;
+        top:50%;
+        left:50%;
+    }
+    75%{
+        width:500px;
+        height: 400px;
+        z-index: 8;
+        opacity: 0.8;
+        box-shadow: 0px 10px 10px 10px;
+        top:50%;
+        left:75%;
+    }
+    100%{
+        width:400px;
+        height:300px;
+        z-index: 0;opacity: 0;
+        box-shadow: 0px 20px 20px 20px;
+        top:50%;
+        left:85%;
+    }
+    
+
+}
+
+.button-left{
+    position:absolute;
+    top:50%;
+    left:4%;
+    width:100px;
+    height:100px;
+    font-size:40px;
+    z-index: 20; 
+    border-radius: 50% 0px 0px 50%;
+    background-color: #262626;
+    color:rgba(255,255,255,0.5);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.button-left:hover{
+    background-color: #2244ee;
+    color: #262626;
+}
+
+
+.button-right{
+    position:absolute;
+    top:50%;
+    left:90%;
+    width:100px;
+    height:100px;
+    font-size: 40px;
+    z-index: 20;
+    border-radius: 0px 50% 50% 0px;
+    background-color: #262626;
+    transition: 0.5s;
+    text-decoration: none;
+    color:rgba(255,255,255,0.5);
+}
+.button-right:hover{
+    background-color: #2244ee;
+    color: #262626;
+}
+

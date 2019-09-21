@@ -1,0 +1,1 @@
+this is css animation which is used to display photos in slideshow manner. it is one of the variant of the slideshow i have presented on the repository.

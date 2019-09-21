@@ -1,0 +1,1 @@
+this css animation allows the border to spin when it is hovered. this allows outstanding UI for the user.
